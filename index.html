@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة محمد أيمن</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شاشة البداية -->
+    <div class="container" id="start-screen">
+        <h1>مرحباً بك في لعبة محمد أيمن</h1>
+        <p>قم باختيار الشخصية و البيئة</p>
+        
+        <div class="buttons">
+            <button class="environment-button" data-environment="الأدغال">
+                <img src="https://i.ibb.co/JjYGXc2/jungle.jpg" alt="الأدغال">
+                <span>الأدغال</span>
+            </button>
+            <button class="environment-button" data-environment="المحيط">
+                <img src="https://i.ibb.co/5h2wJrh/ocean.jpg" alt="المحيط">
+                <span>المحيط</span>
+            </button>
+            <button class="environment-button" data-environment="الصحراء">
+                <img src="https://i.ibb.co/72j8825/desert.jpg" alt="الصحراء">
+                <span>الصحراء</span>
+            </button>
+        </div>
+        
+        <button id="start-game-button" disabled>ابدأ اللعبة</button>
+    </div>
+
+    <!-- مسرح اللعبة -->
+    <div class="game-screen" id="game-screen" style="display: none;">
+        <div class="game-area">
+            <img id="player-character" class="character" alt="البطل">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
